@@ -1,0 +1,39 @@
+.ventana{
+    width:150px;
+    height:150px;
+    overflow:hidden;
+}
+
+.rodillo{
+    width:100px;
+    height:auto;
+}
+
+
+.tragamonedas{
+    display:flex;
+    gap:10px;
+    padding-bottom:30px;
+}
+
+#girar{
+    margin-bottom:10px;
+}
+
+#inicio{
+    margin-top:10px;
+}
+
+@keyframes tirada{
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-500px);
+    }
+}
+
+.animar{
+    animation:tirada 0.7s forwards;  /*ejecuta la keyframes tirada en un periodo de 0.7segs y mantiene su posicion con forwards */
+}
